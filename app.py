@@ -28,7 +28,7 @@ def webhook():
     return r
 
 def makeWebhookResult(req):
-    if req.get("result").get("action") != "delivery.info":
+    if req.get("result").get("action") != "findparcel":
         return {}
     result = req.get("result")
     parameters = result.get("parameters")
