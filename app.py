@@ -34,7 +34,7 @@ def makeWebhookResult(req):
     parameters = result.get("parameters")
     parcelnumber = parameters.get("parcelnumber")
 
-    parcelinfo = {5000:'your parcel has been shipped', '5001':'your parcel has not been shipped', '5002':'your parcel should be delivery in two days', '5003':'your parcel has been shipped', '5004':'your parcel has been shipped', '5005': 'your parcel should be delivery in three days'}
+    parcelinfo = {'5000':your parcel has been shipped, '5001':your parcel has not been shipped, '5002':your parcel should be delivery in two days, '5003':your parcel has been shipped, '5004':your parcel has been shipped, '5005': your parcel should be delivery in three days}
 
     speech = "Parcel with number: " + parcelnumber + " is " + str(parcelinfo[parcelnumber])"
 
